@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<title>::Javascript</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width",initial-scale="1"/>
+</head>
+<body>
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-lg-10 col-md-10 col-sm-10">
+				<div class="card" style="width: 70rem;">
+			       <div class="card-body">
+			       	
+			       </div>
+			        <div class="card-foot">
+			        	<h2 class="text-success" style="text-align: center;">Education Details</h2><hr>
+			        	<div class="table-responsive">
+			        		<table class="table table-bordered mt-5">
+			        			<thead>
+			        				<tr>
+			        					<th>Sno</th>
+			        					<th>Name</th>
+			        					<th>Year</th>
+			        				</tr>
+			        			</thead>
+			        			<tbody>
+			        				<tr>
+			        					<td>1</td>
+			        					<td>Btech</td>
+			        					<td>2015</td>
+			        				</tr>
+			        			</tbody>
+			        			<tfoot>
+			        				<td>2</td>
+			        				<td>Inter</td>
+			        				<td>2011</td>
+			        			</tfoot>
+			        		</table>
+
+
+
+
+			        		</table>
+			        	</div>
+
+			        	
+			        </div>
+			</div>
+			
+		
+		
+
+	</div>
+
+</body>
+</html>
+<script>
+	var row=document.querySelector(".row");
+	var column=document.querySelector(".col")
+	var card=document.querySelector(".card");
+	var profile=document.createElement("img");
+	profile.src="images/3.jpg";
+	profile.style.width="400px";
+	profile.style.padding="1%";
+	profile.style.margin=" 5% 25%";
+	profile.style.text="align-center";
+	profile.style.border="1px solid #ddd";
+	card.append(profile)
+	var cardbody=document.querySelector(".card-body");
+	cardbody.style.textAlign="center";
+	var heading=document.createElement("h2");
+	heading.textContent="Bhavya";
+	cardbody.append(heading);
+	var heading1=document.createElement("h4");
+	heading1.textContent="Trainer Cum Developer";
+	cardbody.append(heading1)
+	var hr=document.createElement("hr");
+	cardbody.append(hr)
+	card.append(cardbody);
+	var cardfoot=document.querySelector(".card-foot");
+	var mail=document.createElement("a");
+	mail.href="mailto:xyz@gmail.com";
+	var mailimage=document.createElement("img");
+	mailimage.src="images/mail.svg";
+	mailimage.style.width="150px";
+	mailimage.style.margin="5%";
+	mailimage.style.padding="2%";
+	mail.append(mailimage);
+	cardfoot.append(mail);
+	var phone=document.createElement("a");
+	phone.href="tel:+91 9959754455";
+	var phoneimage=document.createElement("img");
+	phoneimage.src="images/whatsapp.svg"
+	phoneimage.style.width="150px";
+	phoneimage.style.margin="5%";
+	phoneimage.style.padding ="2%";
+	phone.append(phoneimage)
+	cardfoot.append(phone);
+	var facebook=document.createElement("a")
+	facebook.href="https://www.facebook.com/bhavya.manam.754"
+	var facebookimage=document.createElement("img")
+	facebookimage.src="images/facebook.svg"
+	facebookimage.style.width="150px";
+	facebookimage.style.margin="5%";
+	facebookimage.style.padding=" 2%";
+	facebook.append(facebookimage);
+	cardfoot.append(facebook);
+	var hr=document.createElement("hr");
+	cardfoot.append(hr)
+	var heading=document.createElement("h1");
+	heading.textContent="Professional Details";
+	heading.style.textAlign="center";
+	cardfoot.append(heading);
+	var ul=document.createElement("ul")
+	var li=document.createElement("li")
+	li.textContent="Done various certifications in different platforms";
+	ul.append(li);
+	var li=document.createElement("li")
+	li.textContent="Working as a Trainer Cum Developer in APSSDC";
+	ul.append(li);
+	var li=document.createElement("li")
+	li.textContent="Trained morethan 2000 students";
+	ul.append(li);
+
+	cardfoot.append(ul);
+	card.append(cardfoot);
+	column.append(card);
+	row.append(column);
+	
+</script>
+<script>
+	
+</script>
